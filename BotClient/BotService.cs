@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
-using TelegramBot.Models;
 
 namespace TelegramBot.BotClient
 {
@@ -22,7 +21,6 @@ namespace TelegramBot.BotClient
             try
             {
                 string url = $"{options.Value.Url}{options.Value.Route}";
-                //string route = $"{url}/bot";
 
                 await botClient.SetWebhookAsync(url, cancellationToken: default);
 

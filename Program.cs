@@ -2,7 +2,6 @@ using Microsoft.Extensions.Options;
 using System;
 using Telegram.Bot;
 using TelegramBot.BotClient;
-using TelegramBot.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -3,7 +3,7 @@ using Telegram.Bot.Exceptions;
 
 namespace TelegramBot.BotClient
 {
-    public static class Bot
+    public static class BotSingleton
     {
         private static TelegramBotClient _client;
 
